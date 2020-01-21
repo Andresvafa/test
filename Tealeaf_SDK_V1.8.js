@@ -160,7 +160,7 @@ var config = {
           "timerinterval": 1000 * 60 * 1, /* 1 minute */
           "checkEndpoint": true,
           "endpointCheckTimeout": 3000,
-      
+      	  "encoder": "gzip"
         }
       ],
       "asyncReqOnUnload": false,
