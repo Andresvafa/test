@@ -279,6 +279,18 @@ var config = {
         "hoverThreshold": 1000
     },
     "performance": {
+	     "performanceAlert": {
+		    /* required
+		     * boolean
+		     */
+		    "enabled": true,
+
+   	            /* required
+		     * measured in ms
+		     * capture the data if resources loading time exceeds threshold
+		     */
+		    "threshold": 2000,
+  		},
       "calculateRenderTime": true,
       "renderTimeThreshold": 600000,
       filter: {
@@ -300,18 +312,7 @@ var config = {
 	        "domComplete": true,
 	        "loadEventEnd": true
        }
-	    "performanceAlert": {
-		    /* required
-		     * boolean
-		     */
-		    "enabled": true,
-
-   	            /* required
-		     * measured in ms
-		     * capture the data if resources loading time exceeds threshold
-		     */
-		    "threshold": 2000,
-  		}
+	   
     },
     "geolocation": {
       "enabled": false,
