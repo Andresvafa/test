@@ -203,21 +203,7 @@ var config = {
             "target": "window"
           }
         ]
-      performance: {
-		performanceAlert: {
-		    /* required
-		     * boolean
-		     */
-		    enabled: true,
-
-   	            /* required
-		     * measured in ms
-		     * capture the data if resources loading time exceeds threshold
-		     */
-		    threshold: 2000,
-  		}
-		
-	}},
+      },
       "replay": {
         "enabled": true,
         "events": [
@@ -314,6 +300,18 @@ var config = {
 	        "domComplete": true,
 	        "loadEventEnd": true
        }
+	    "performanceAlert": {
+		    /* required
+		     * boolean
+		     */
+		    "enabled": true,
+
+   	            /* required
+		     * measured in ms
+		     * capture the data if resources loading time exceeds threshold
+		     */
+		    "threshold": 2000,
+  		}
     },
     "geolocation": {
       "enabled": false,
