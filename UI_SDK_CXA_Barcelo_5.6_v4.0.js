@@ -93,7 +93,7 @@ var config = {
           "endpoint": "//decollector.tealeaf.ibmcloud.com/collector/collectorPost",
           "maxEvents": 30,
           "maxSize": 30000,
-          "timerinterval": 1000 * 60 * 1, /* 1 minute */
+          "timerinterval": 1000 * 60 * 10, /* 1 minute */
           "checkEndpoint": true,
           "endpointCheckTimeout": 3000,
           "encoder": "gzip"  
