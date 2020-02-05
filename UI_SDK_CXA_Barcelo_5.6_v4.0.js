@@ -101,7 +101,8 @@ var config = {
       ],
       "asyncReqOnUnload": true,
       "useBeacon": true,
-      "xhrLogging": true
+      "xhrLogging": true,
+      "tltWorker": window.fetch && window.Worker ? new Worker('tealeaf.js') : null
     },
     "serializer": {
       "json": {
