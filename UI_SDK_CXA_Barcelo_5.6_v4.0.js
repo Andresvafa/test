@@ -192,19 +192,6 @@ var config = {
     "inactivityTimeout": 1000 * 60 * 20, /* 20 minutes */
     "modules": {
       "performance": {
-	      performanceAlert: {
-		    /* required
-		     * boolean
-		     */
-		    enabled: true,
-
-   	            /* required
-		     * measured in ms
-		     * capture the data if resources loading time exceeds threshold
-		     */
-		    threshold: 2000,
-
-  		}
         "enabled": true,
         "events": [
           {
@@ -216,7 +203,21 @@ var config = {
             "target": "window"
           }
         ]
-      },
+      performance: {
+		performanceAlert: {
+		    /* required
+		     * boolean
+		     */
+		    enabled: true,
+
+   	            /* required
+		     * measured in ms
+		     * capture the data if resources loading time exceeds threshold
+		     */
+		    threshold: 2000,
+  		}
+		
+	}},
       "replay": {
         "enabled": true,
         "events": [
