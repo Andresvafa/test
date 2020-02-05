@@ -192,6 +192,31 @@ var config = {
     "inactivityTimeout": 1000 * 60 * 20, /* 20 minutes */
     "modules": {
       "performance": {
+	      performanceAlert: {
+		    /* required
+		     * boolean
+		     */
+		    enabled: true,
+
+   	            /* required
+		     * measured in ms
+		     * capture the data if resources loading time exceeds threshold
+		     */
+		    threshold: 2000,
+
+                    /* optional
+		     * array of strings
+		     * specify the resource type to monitor, monitor all resources by default
+		     * possible values are "script", "link", "img", "xmlhttprequest", "iframe", etc
+		     */
+		    resourceTypes: [],
+
+		    /* optional
+		     * array of a string or regex object
+		     * used to blacklist certain resources by matching the resource name (url)
+		     */
+		    blacklist: ["sdk"]
+  		}
         "enabled": true,
         "events": [
           {
