@@ -102,7 +102,7 @@ var config = {
       "asyncReqOnUnload": true,
       "useBeacon": true,
       "xhrLogging": true,
-      "tltWorker": window.fetch && window.Worker ? new Worker('tealeaf.js') : null
+      "tltWorker": window.fetch && window.Worker ? new Worker('https://static.barcelo.com/etc.clientlibs/barcelo/clientlibs/clientlib-tealeaf.min.js') : null
     },
     "serializer": {
       "json": {
