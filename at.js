@@ -1,5 +1,9 @@
 
-//No Custom JavaScript 
+window.targetGlobalSettings = {
+
+  cookieDomain: "deporvictory.blogspot.com"
+
+};
 /**
  * @license
  * at.js 2.4.0 | (c) Adobe Systems Incorporated | All rights reserved
